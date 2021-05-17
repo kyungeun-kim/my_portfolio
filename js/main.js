@@ -81,25 +81,25 @@ $(function(){
 
 
 	/* section1 달 오브젝트 mouse parallax */
-	var currentX = '';
-	var currentY = '';
-	var movementConstant = 0.0055;
-	$(document).mousemove(function(e) {
-		if (currentX == '') currentX = e.pageX;
-		var xdiff = e.pageX - currentX;
-		currentX = e.pageX;
-		if (currentY == '') currentY = e.pageY;
-		var ydiff = e.pageY - currentY;
-		currentY = e.pageY;
-		$('.parallax div').each(function(i, el) {
-			var movement = (i + 1) * (xdiff * movementConstant);
-			var movementy = (i + 1) * (ydiff * movementConstant);
-			var newX = $(el).position().left + movement;
-			var newY = $(el).position().top + movementy;
-			$(el).css('left', newX + 'px');
-			$(el).css('top', newY + 'px');
-		});
-	});
+//	var currentX = '';
+//	var currentY = '';
+//	var movementConstant = 0.0055;
+//	$(document).mousemove(function(e) {
+//		if (currentX == '') currentX = e.pageX;
+//		var xdiff = e.pageX - currentX;
+//		currentX = e.pageX;
+//		if (currentY == '') currentY = e.pageY;
+//		var ydiff = e.pageY - currentY;
+//		currentY = e.pageY;
+//		$('.parallax div').each(function(i, el) {
+//			var movement = (i + 1) * (xdiff * movementConstant);
+//			var movementy = (i + 1) * (ydiff * movementConstant);
+//			var newX = $(el).position().left + movement;
+//			var newY = $(el).position().top + movementy;
+//			$(el).css('left', newX + 'px');
+//			$(el).css('top', newY + 'px');
+//		});
+//	});
 
 
 
@@ -236,6 +236,10 @@ $(function(){
 	var tween1_2 = TweenMax.fromTo('#sec1_animate1_2', 100, {
 	  opacity:1}, {opacity: 0});
 
+	//scroll down indicator
+	 var tween1_3 = TweenMax.to('#sec1_animate1_3', 100, {
+		opacity: 0 , y: 0});
+
 	//section2 bg_txt
 	var tl1 = new TimelineMax();  
 		tl1
@@ -267,6 +271,16 @@ $(function(){
 		duration: win_height  * (2.5/3)
 	})
 		.setTween(tween1_2)
+		.addTo(controller1);
+//		.addIndicators({
+//			name: "1"
+//		  });
+
+	var scene1_3 = new ScrollMagic.Scene({
+		triggerElement: "#trigger1",
+		duration: win_height  * (2.5/3)
+	})
+		.setTween(tween1_3)
 		.addTo(controller1);
 //		.addIndicators({
 //			name: "1"

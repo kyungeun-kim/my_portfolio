@@ -27,7 +27,7 @@ $(function(){
 		var currTop = $(window).scrollTop();
 		var $section = $(".section");		
 
-		if(currTop >= $section.eq(2).offset().top - 300){
+		if(currTop >= $section.eq(2).offset().top - 700){
 			colorChange();
 		}else {
 			colorReturn();

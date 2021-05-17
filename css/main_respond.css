@@ -17,6 +17,9 @@
 	/* section1 */
 	.section1 .greet .greet_txt {font-size: 1.65em;}
 
+	/* scroll-down */
+	.scroll-down {bottom: 60px;}
+
 	/* section2 */
 	.section2 {height: auto !important;}
 	.section2 .bg_txt .txt:nth-child(1) {transform: rotate(0deg) !important; top: 20px; left: 50px;}

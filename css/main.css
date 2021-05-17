@@ -38,10 +38,10 @@
 .section1 .box {float: left; display: table; height: 100%; }
 .section1 .va_m {display: table-cell; width: 100%; height: 100%; vertical-align: middle;}
 .section1 .greet {width: 100%; text-align: center;} 
-.section1 .greet .greet_txt {font-family: 'S-CoreDream-3Light' ,  sans-serif !important; font-size: 2.2em; letter-spacing: 2px;} 
+.section1 .greet .greet_txt {font-family: 'S-CoreDream-3Light' ,  sans-serif !important; font-size: 2.2em; letter-spacing: 2px; line-height: 145%;} 
 .section1 .greet .highlight {display: inline-block; animation: changeColor   3s ease infinite; -webkit-animation: changeColor   3s ease infinite; -moz-animation: changeColor   3s ease infinite;  -ms-animation: changeColor   3s ease infinite;}
 .section1 .greet .scroll_show {transform: 0; opacity: 0;}
-.section1 .down_arr_box {display: none; position: absolute; bottom: 40px; left: 50%; margin-left: -11.5px; text-align: center; 
+.section1 .down_arr_box {display: block; position: absolute; bottom: 40px; left: 50%; margin-left: -11.5px; text-align: center; 
 -webkit-animation: arr_move 3s infinite; -o-animation: arr_move 3s infinite; animation: arr_move 3s infinite;} 
 .section1 .down_arr_box span {display: block; font-size: 0.55em; padding-top: 3px;}
 .section1 .stars, .twinkling, .clouds {position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%;}
@@ -54,11 +54,17 @@
   animation:move-twink-back 400s linear infinite;
 }
 
-.parallax {position: absolute;right: 10%;top: 10%;overflow: hidden;width: 150px;height: 150px;border-radius: 50%;box-shadow: 0 0 160px 0px #a78a9e, 0 0 30px -4px #ac8db4, 0 0 8px 2px rgb(178 151 176);background: rgb(178 151 176);}
-
-div#sec1_animate1 {}
+.parallax {position: absolute; right: 10%; top: 10%; overflow: hidden; width: 150px; height: 150px; border-radius: 50%; box-shadow: 0 0 160px 0px #a78a9e, 0 0 30px -4px #ac8db4, 0 0 8px 2px #b297b0; background: #b297b0;}
 .par {position: absolute; width: 150px; height: 150px; background-repeat: no-repeat; background-position: center center;}
 .layer1 {left: auto; right: 0; top: 0; /* margin-left:  -150px; margin-top: -150px; */ background-image:  url("../images/main/moon.png"); background-size: 167px 167px; border-radius: 50%;}
+
+
+.scroll-down {position: absolute;  bottom: 0; left: 50%; font-size: 13px; letter-spacing: 1px; font-family: "Raleway" , sans-serif !important; color: #ffffff; text-align: center; margin-left: -42.5px;}
+
+.scroll-down .txt {display: block; position: relative; bottom: 5px; margin-top: 5px;}
+.scroll-down .lines {position: relative; display: inline-block; width: 1px; height: 50px; overflow: hidden;}
+.scroll-down .lines .line1 {position: absolute; top: 0; left: 0; display: block; width: 1px; height: 50px; background: #fff; opacity: 0.8; overflow: hidden;}
+.scroll-down .lines .line2 {position: absolute; top: -50px;  left: 0; display: block; width: 1px; height: 50px; background: #da87f9; overflow: hidden; -webkit-animation: scollDown 2s infinite; animation: scollDown 2s infinite;}
 
 
 
@@ -187,6 +193,8 @@ background:radial-gradient(200% 100% at bottom center,#F7F7B6,#E96F92,#75517D,#1
 .section4 .lottery_wrap .con .right_box .scratch_list li {position: relative; display: table; width: 100%; height: 100%; padding: 15px 10px; margin-bottom: 25px; text-align: center; font-family: 'S-CoreDream-3Light' ,  sans-serif !important; font-weight: 600; background: #f7f7f7; overflow: hidden !important;}
 .section4 .lottery_wrap .con .right_box .scratch_list li:last-child {margin-bottom: 0 !important;}
 .section4 .lottery_wrap .con .right_box .scratch_list li .txt {position: relative; top: 10px; display: table-cell; width: 100%; height: 100%; vertical-align: middle; color: #333; line-height: 130%; opacity: 0; word-break: keep-all;}
+.section4 .lottery_wrap .con .right_box .scratch_list li .txt a {display: inline-block; transition: all 0.3s;}
+.section4 .lottery_wrap .con .right_box .scratch_list li .txt a:hover {color: #190bf5; transition: all 0.3s;}
 .section4 .lottery_wrap .con .right_box .scratch_list li .scratch_area {position: absolute; top: 0; right: 0; width: 100%; height: 100%; background-image: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 cursor: pointer;}
 .section4 .lottery_wrap .con .right_box .scratch_list li:first-child .cursor {position: absolute; top: 5%; left: 50%; margin-left: -110px; font-weight: 600;}
@@ -209,14 +217,14 @@ cursor: pointer;}
 .modal_box .modal_wrap .inner {padding: 30px; background: #fff; border-radius: 10px;}
 .modal_box .modal_wrap .inner .txt {font-family: 'S-CoreDream-8Heavy' ,  sans-serif !important; font-size: 1.75em; font-weight: 600; color: #333; text-align: center; word-break: keep-all; line-height: 150%;}
 .modal_box .modal_wrap .inner .txt span {display: inline-block; animation: changeColor   3s ease infinite; -webkit-animation: changeColor   3s ease infinite; -moz-animation: changeColor   3s ease infinite;  -ms-animation: changeColor   3s ease infinite;}
-.modal_box .modal_wrap .btn_wrap {text-align: center;}
+.modal_box .modal_wrap .btn_wrap {margin-top: 15px; text-align: center;}
 .modal_box .modal_wrap .btn_wrap .yes_btn {display: inline-block; width: 150px; padding: 7px; font-size: 1.1em; font-weight: 600; text-align: center; letter-spacing: 1px; background: red; color: #fff; border-radius: 5px;}
 .modal_box .modal_wrap .btn_wrap .yes_btn:first-child {margin-right: 20px; background: #3fc3ec;}
 .modal_box .modal_wrap .btn_wrap a:last-child {background: #ff7e35;}
 .modal_box .modal_wrap .btn_wrap .yes_btn:hover span {display: inline-block; animation: wave-text 0.7s ease-in-out infinite;}
-.modal_box .modal_wrap .btn_wrap .yes_btn:hover span:nth-child(1){ animation-delay: 0.0s;}
-.modal_box .modal_wrap .btn_wrap .yes_btn:hover span:nth-child(2){ animation-delay: 0.1s;}
-.modal_box .modal_wrap .btn_wrap .yes_btn:hover span:nth-child(3){ animation-delay: 0.2s;}
+.modal_box .modal_wrap .btn_wrap .yes_btn:hover span:nth-child(1){animation-delay: 0.0s;}
+.modal_box .modal_wrap .btn_wrap .yes_btn:hover span:nth-child(2){animation-delay: 0.1s;}
+.modal_box .modal_wrap .btn_wrap .yes_btn:hover span:nth-child(3){animation-delay: 0.2s;}
 .modal_box .modal_wrap .inner2 {display: none;}
 .modal_box .modal_wrap .inner2 .txt {color: #f50a8e;}
 .modal_box .modal_wrap .inner2 .contact_box {margin-top: 25px;}
@@ -291,3 +299,16 @@ cursor: pointer;}
 @-webkit-keyframes progress2 {0% {transform: scale(.3,.8) translatez(0);opacity: 0;} 90% {transform: scale(1,1) translatex(300px) translatez(0); opacity: 1;} 100% {transform: scale(1,1) translatex(300px) translatez(0); opacity: 0;}}
 @-moz-keyframes progress2 {0% {transform: scale(.3,.8) translatez(0);opacity: 0;} 90% {transform: scale(1,1) translatex(300px) translatez(0); opacity: 1;} 100% {transform: scale(1,1) translatex(300px) translatez(0); opacity: 0;}}
 @-ms-keyframes progress2 {0% {transform: scale(.3,.8) translatez(0);opacity: 0;} 90% {transform: scale(1,1) translatex(300px) translatez(0); opacity: 1;} 100% {transform: scale(1,1) translatex(300px) translatez(0); opacity: 0;}}
+
+
+@keyframes scollDown {50% {transform: translateY(100%)} 100% {transform: translateY(200%)}}
+@-webkit-keyframes scollDown {50% {transform: translateY(100%)} 100% {transform: translateY(200%)}}
+@-moz-keyframes scollDown {50% {transform: translateY(100%)} 100% {transform: translateY(200%)}}
+@-ms-keyframes scollDown {50% {transform: translateY(100%)} 100% {transform: translateY(200%)}}
+
+
+
+@keyframes changeBgColor {0% {color: #ff5583;} 25% {color: #cc91ff;} 50% {color: #60aaff;} 75% {color: #9eff7b;} 100% {color: #ff5583;}}
+@-webkit-keyframes changeBgColor {0% {color: #ff5583;} 25% {color: #cc91ff;} 50% {color: #60aaff;} 75% {color: #9eff7b;} 100% {color: #ff5583;}}
+@-moz-keyframes changeBgColor {0% {color: #ff5583;} 25% {color: #cc91ff;} 50% {color: #60aaff;} 75% {color: #9eff7b;} 100% {color: #ff5583;}}
+@-ms-keyframes changeBgColor {0% {color: #ff5583;} 25% {color: #cc91ff;} 50% {color: #60aaff;} 75% {color: #9eff7b;} 100% {color: #ff5583;}}
