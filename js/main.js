@@ -47,6 +47,11 @@ $(function(){
 		$('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
 	}
 
+
+	/* ie-alert */
+	$(".ie_alert .close_btn").click(function(){
+		$(".ie_alert").fadeOut(400);
+	});
 	
 
 
@@ -241,12 +246,6 @@ $(function(){
 	var tween2 = TweenMax.staggerFromTo(".skill_list .each_box", 0.5, {
 		y: "100px", ease: Linear.easeNone}, {y: 0, ease: Linear.easeNone}, .1);
 
-	//section4 scratch_list
-//	var tl2 = new TimelineMax();
-//		tl2
-//		.from(".section4 .lottery_box" , 1000 , {opacity: 0 , y: 100 , ease: Linear.easeNone})
-//		.from(".lottery_box .left_box" , 1000 , {opacity: 0 , x: '50%' , ease: Linear.easeNone})
-//		.from(".lottery_box .scratch_box" , 1000 , {opacity: 0 , ease: Linear.easeNone});
 
 
 

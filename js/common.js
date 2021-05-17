@@ -112,6 +112,9 @@ $(window).load(function(){
 });
 	
 
+	
+
+
 
 	$(window).trigger("resize");
 

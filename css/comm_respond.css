@@ -11,6 +11,10 @@
 
 	/* head_logo */
 	.head_logo {left: 15px;}
+
+	/* footer */
+	.foot_btm .github_link_box {position: relative; text-align: center;}
+	.foot_btm .github_link_box a {display: inline-block;}
 }
 
 @media screen and (max-width:991px){
@@ -43,32 +47,12 @@
 
 	/* footer */
 	.footer {bottom: 75px;}
-	.q_share_box {display: block;} 
-
-	/* foot_top (10/10) */ 
-	.foot_top .link_list{float:none; display:block; border-bottom:1px solid #ccc; text-align:center;}
-	.foot_top .link_list li{float:none; display:inline-block;} 
-	.foot_top .link_list li:after{content: "|"; display: inline-block; margin-top: -6px;  color: #aeafb0;  font-size: 13px; vertical-align: middle;} 
-	.foot_top .link_list li:last-child:after{display:none;}  
-	.foot_top .link_list li a{padding:0 13px;} 
-	.foot_btm {padding:20px 0;}
-	.foot_btm .foot_logo {position:static; width:100%; margin-bottom:15px; text-align:center;} 
-	.foot_btm .txt_box{padding-left:0; text-align:center;} 
-	.foot_top .site_box .baro_box {width:100%;} 
-	.foot_top .site_box .baro_box .site_btn{width:80%;} 
-	.foot_top .site_box .foot_top_btn{width:20%;}
-
-	/* banner_box1 */
-	.banner_box1 .banner_slider {height: 60px;}
-	.banner_box1 .banner_slider li a {height: 60px;}
-	
 	
 }
 
 @media screen and (max-width:767px){
-	/* foot_top (10/10) */  
+	/* footer */  
 	.footer .foot_top .container {padding: 0;}
-	.foot_top .link_list li a{padding:0 5px;} 
 }
 
 @media screen and (max-width:480px){
