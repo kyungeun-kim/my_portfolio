@@ -1,0 +1,805 @@
+<!DOCTYPE HTML>
+<html lang="ko-KR">
+<head>
+	<!-- title -->
+	<meta charset="UTF-8">
+    <meta name="Author" content="김경은">
+    <meta name="Keywords" content="웹퍼블리셔, 프론트엔드 개발자, front-end developer, 웹에이전시, 경력 퍼블리셔">
+    <meta name="Description" content="개인 포트폴리오 사이트입니다.">
+    <meta property="og:title" content="웹퍼블리셔 | 김경은">
+    <meta property="og:description" content="웹퍼블리셔 김경은의 포트폴리오 사이트입니다">
+    <meta property="og:image" content="./images/common/og_image2.png">
+    <meta property="og:url" content="kework.dothome.co.kr">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"> 
+	<meta http-equiv="Expires" content="-1"> 
+	<meta http-equiv="Pragma" content="no-cache"> 
+	<meta http-equiv="Cache-Control" content="No-Cache"> 
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1.4.10/webfont.js"></script>
+    <script type="text/javascript">
+        WebFont.load({
+            // For google fonts
+            google: {
+                families: ['Open Sans']
+            },
+            // For early access or custom font
+            custom: {
+                families: ['Noto Sans KR', 'NanumSquare'],
+                urls: ['./css/NotoSans.css', './css/NanumSquare.css', './css/SpoqaHanSans.css']
+            }
+        });
+    </script>
+    <link rel="shortcut icon" type="image/x-icon" href="./images/common/favicon.png" >
+    <title>웹퍼블리셔 | 김경은</title>
+	<!-- // title -->
+
+	<!-- common_css -->
+	<link rel="stylesheet" type="text/css" href="./css/reset.css">
+	<link rel="stylesheet" type="text/css" href="./css/board.css">
+	<link rel="stylesheet" type="text/css" href="./css/common.css">
+	<link rel="stylesheet" type="text/css" href="./css/comm_respond.css">
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/animate.css">
+	<link rel="stylesheet" type="text/css" href="./css/print.css">
+	<link rel="stylesheet" type="text/css" href="./css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="./css/swiper.min.css">
+	<!-- // common_css -->
+	
+	<!-- common_js -->
+	<script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-migrate-1.4.1.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="./js/wow.min.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/swiper.js"></script>
+	<script type="text/javascript" src="./js/swiper.min.js"></script>
+
+	<!-- 추가 js -->
+	<script type="text/javascript" src="./js/main.js"></script>
+	<script type="text/javascript" src="./js/jquery.mousewheel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<!-- // 추가 js -->
+
+	<!--[if lt IE 10]>
+		<script src="./js/placeholders.min.js" type="text/javascript"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="./js/html5shiv.js" type="text/javascript"></script>
+		<script src="./js/respond.min.js" type="text/javascript"></script>
+		<script src="./js/selectivizr-min.js" type="text/javascript"></script>
+	<![endif]-->
+
+	<script type="text/javascript">
+		/* 브라우저 체크 (IE) */
+		var ua = navigator.userAgent.toLowerCase();
+		if( ua.indexOf( 'msie' ) != -1 || ua.indexOf( 'trident' ) != -1 ) {
+			var version = 11;
+			ua = /msie ([0-9]{1,}[\.0-9]{0,})/.exec( ua );
+			if( ua )
+			{
+				version = parseInt( ua[ 1 ] );
+			}
+			var classNames = '';
+			classNames += ' is-ie';
+			classNames += ' ie' + version;
+			for( var i = version + 1; i <= 11; i++ ) {
+				classNames +=  ' lt-ie' + i;
+			}
+			document.getElementsByTagName( 'html' )[ 0 ].className += classNames;
+		}		
+	</script>
+	<!-- // common_js -->
+
+	<!-- 추가 css -->
+	<link rel="stylesheet" href="./css/main.css" type="text/css">
+	<link rel="stylesheet" href="./css/main_respond.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu" />
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap" rel="stylesheet">
+	<!-- // 추가 css -->
+
+	
+
+</head>
+<body>
+
+	<!-- loading -->
+	<!-- <div class="loading">
+		<span>반</span>
+		<span>갑</span>
+		<span>습</span>
+		<span>니</span>
+		<span>다</span>
+		<span>:)</span>
+	</div> -->
+	<!-- // loading -->
+	<div class="loading_wrap">
+		<!-- <div class="loading"></div> -->	
+		<div class="examples__item">
+			<div class="loader example-3">
+				<div class="loader loader-3"></div>
+				<div class="loader loader-3"></div>
+				<div class="loader loader-3"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- wrapper -->
+	<div class="wrapper">
+		<!-- header -->
+		<header data-include="header"></header>
+		<!-- // header -->
+
+		<!-- contents -->
+		<main id="real_contents" class="contents">
+
+			<!-- section1 -->
+			<section class="section section1" id="section1">
+				
+				<div class="stars"></div>
+				<div class="twinkling"></div>
+				<div class="parallax wow fadeIn" data-wow-delay="2s" id="sec1_animate1">
+				  <div class="par layer1"></div>
+				</div>
+				
+				<div class="container">
+					<div class="con_box clearfix">
+						<div class="greet box">
+							<div class="va_m">
+								<!-- <div class="test1" style="color: #fff;"></div>
+								<div class="test2" style="color: #fff;"></div> -->
+								<div id="sec1_animate1_2">
+									<p class="greet_txt wow fadeInUp" data-wow-delay="3s">안녕하세요 </p>
+									<p class="greet_txt wow fadeInUp" data-wow-delay="3.7s">웹 퍼블리셔 <span class="highlight">김경은</span>입니다.</p>
+									<p class="greet_txt wow fadeInUp" data-wow-delay="4.4s">잘 부탁드립니다:)</p>
+								</div>
+
+								<!-- <div class="scroll_show"  id="sec1_animate2">
+									<p>Web Publisher / Markup developer</p>
+								</div> -->
+							</div>
+							
+						</div>
+						<!-- <div class="profile box wow fadeInRight" data-wow-delay="0.8s">
+								<div class="va_m">
+									<div class="img_box"></div>
+								</div>
+						</div>	 -->					
+					</div>
+					<!-- <div class="down_arr_box">
+						<img src="./images/main/ico_section1_arr.png" alt="아래로 스크롤하세요">
+						<span>SCROLL</span>
+					</div> -->
+				</div>
+				<div id="trigger1" class="trigger1"></div>
+
+			</section>
+			<!-- // section1 -->
+
+			<!-- section2 -->
+			<section class="section section2" id="section2">
+				<!-- <div class="stars"></div> -->
+				<div class="bg_txt">					
+					<span class="txt1 txt" id="txt_ani1">제가 좋아하고 </span>
+					<span class="txt2 txt" id="txt_ani2">자신있는 것들</span>
+				</div>
+				<div class="container">
+					<div class="skill_list_box">
+						<ul class="skill_list clearfix">
+							<li class="each_box each_box01" id="box_ani1">
+								<a href="#" class="view_more">
+									<div class="tit"><span class="icon"><img src="./images/main/html_icon.png" alt="HTML"></span>HTML5</div>
+									<div class="after_click">
+										<span class="num">95%</span>
+									</div>
+								</a>
+								<div class="txt_wrap">
+									<div class="txt_box">
+										<p>웹표준&middot;접근성을 준수하는 Markup을 작성합니다.</p>
+										<p>검색엔진최적화(SEO)를 통해 더 많은 사용자들에게 접근 가능하도록합니다.</p>
+									</div>
+								</div>
+							</li>
+							<li class="each_box each_box02" id="box_ani2">
+								<a href="#" class="view_more">
+									<div class="tit"><span class="icon"><img src="./images/main/css_icon.png" alt="CSS"></span>CSS3</div>
+									<div class="after_click">
+										<span class="num">95%</span>
+									</div>
+								</a>
+								<div class="txt_wrap">
+									<div class="txt_box">
+										<p>css로 구현이 불가능한 것은 없다고 생각하는 만큼, 다양한 속성을 활용합니다.</p>
+										<p>미디어쿼리를 이용한 반응형작업은 기본!</p>
+									</div>
+								</div>
+							</li>
+							<li class="each_box each_box03" id="box_ani3">
+								<a href="#" class="view_more">
+									<div class="tit"><span class="icon"><img src="./images/main/js_icon.png" alt="Javascript"></span>Javascript</div>
+									<div class="after_click">
+										<span class="num">80%</span>
+									</div>
+								</a>
+								<div class="txt_wrap">
+									<div class="txt_box">
+										<p>DOM구조를 이해하며 자바스크립트로 접근&middot;제어합니다.</p>
+										<p>기본적인 문법을 이해하며 문제를 해결합니다.</p>
+									</div>
+								</div>
+							</li>
+							<li class="each_box each_box04" id="box_ani4">
+								<a href="#" class="view_more">
+									<div class="tit"><span class="icon"><img src="./images/main/jq_icon.png" alt="jQuery"></span>JQuery</div>
+									<div class="after_click">
+										<span class="num">85%</span>
+									</div>
+								</a>
+								<div class="txt_wrap">
+									<div class="txt_box">
+										<p>제이쿼리를 활용하여 다양한 애니메이션을 구현합니다.</p>
+										<p>다양한 라이브러리 활용경험이 있습니다. <br>ex) slick.js , fullpage.js , scrollMagic.js(+GSAP) 등</p>
+									</div>
+								</div>
+							</li>
+							<li class="each_box each_box05" id="box_ani5">
+								<a href="#" class="view_more">
+									<div class="tit"><span class="icon"><img src="./images/main/ps_icon.png" alt="Photoshop"></span>Photoshop</div>
+									<div class="after_click">
+										<span class="num">60%</span>
+									</div>
+								</a>
+								<div class="txt_wrap">
+									<p>간단한 이미지 편집작업이 가능합니다.</p>
+								</div>
+							</li>
+							<li class="each_box each_box06"  id="box_ani6">
+								<a href="#" class="view_more">
+									<div class="tit"><span class="icon"><img src="./images/main/svn_icon.png" alt="SVN"></span>SVN</div>
+									<div class="after_click">
+										<span class="num">90%</span>
+									</div>
+								</a>
+								<div class="txt_wrap">
+									<div class="txt_box">
+										<p>실무에서 대부분의 프로젝트 작업 시 사용하였으며,<br> 원리를 이해하고 능숙히 다룹니다.</p>
+									</div>
+								</div>
+							</li>
+							<li class="each_box each_box07" id="box_ani7">
+								<a href="#" class="view_more">
+									<div class="tit"><span class="icon"><img src="./images/main/git_icon.png" alt="GIT"></span>GIT</div>
+									<div class="after_click">
+										<span class="num">50%</span>
+									</div>
+								</a>
+								<div class="txt_wrap">
+									<div class="txt_box">
+										<p>실무적용을 위해 포트폴리오 사이트 구현 시 활용하였습니다</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div id="trigger2"></div>
+			</section>
+			<!-- // section2 -->
+
+			<!-- section3 -->
+			<section class="section section3" id="section3">
+				<div class="container">
+					<div class="work_list_box">
+						<div class="type_box">
+							<ul class="type_list clearfix">
+								<li><a href="#" class="on" data-filter="*">전체</a></li>
+								<li><a href="#" data-filter=".type1">신규구축</a></li>
+								<li><a href="#" data-filter=".type2">디자인개편</a></li>
+								<li><a href="#" data-filter=".type3">유지보수</a></li>
+							</ul>
+						</div>
+						<div class="grid">
+							<div class="grid-sizer"></div>
+							<!-- 알앤디잡 -->
+							<div class="grid-item type2">
+								<div href="#" class="each_work">
+									<img src="./images/main/work1.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">이공계인력중개센터(RNDJOB)<span>-한국산업기술진흥협회</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li class="off">SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인&middot;서브페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="https://www.rndjob.or.kr/" target="_blank">운영사이트 가기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://www.rndjob.or.kr/" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>
+							</div>
+							<!-- // 알앤디잡 -->
+							<!-- 꿈마루 -->
+							<div class="grid-item type2">
+								<div href="#" class="each_work">
+									<img src="./images/main/work2.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">꿈마루<span>-경기도일자리재단</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li><i class="xi-check"></i>SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인&middot;서브페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="https://www.dreammaru.or.kr/" target="_blank">운영사이트 가기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://www.dreammaru.or.kr/" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>
+								<!-- <a href="https://kor.pngtree.com">사업 PNG는 588ku에 의해 설계되었고,에서 유래되었다. Pngtree.com</a> -->				
+							</div>
+							<!-- // 꿈마루 -->
+							<!-- 영진원 -->
+							<div class="grid-item type3">
+								<div href="#" class="each_work">
+									<img src="./images/main/work3.jpg" />
+									<div class="brief_view_wrap">									
+										<div class="brief_box">
+											<h3 class="tit">함께하는 미디어센터<span>-영화진흥위원회</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li><i class="xi-check"></i>SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>주요업무:</span> 신규템플릿 퍼블리싱, <br>컨텐츠 운영관리지원</p>
+											<div class="btn_box">
+												<a href="https://www.media-center.or.kr/mediaMain.do" target="_blank">운영사이트 가기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://www.media-center.or.kr/mediaMain.do" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>
+								<!-- <a href='https://www.freepik.com/vectors/abstract'>Abstract vector created by macrovector - www.freepik.com</a> -->								
+							</div>
+							<!-- // 영진원 -->
+							<!-- 경기복지재단 -->
+							<div class="grid-item type1">
+								<div href="#" class="each_work">
+									<img src="./images/main/work4.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">사회복지학습포탈시스템<span>-경기복지재단</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li><i class="xi-check"></i>SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인&middot;서브페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="https://edu.ggwf.or.kr/main.do" target="_blank">운영사이트 가기</a>
+												<a href="https://edu.ggwf.or.kr/main.do" target="_blank">소스보기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://edu.ggwf.or.kr/main.do" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>
+							</div>
+							<!-- // 경기복지재단 -->
+							<!-- 에스크매스 -->
+							<div class="grid-item type2">
+								<div href="#" class="each_work">
+									<img src="./images/main/work5.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">Askmath<span>-한국과학창의재단</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li class="off">SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="https://www.askmath.re.kr/" target="_blank">운영사이트 가기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://www.askmath.re.kr/" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>								
+							</div>
+							<!-- // 에스크매스 -->
+							<!-- 리뉴 -->
+							<div class="grid-item type1">
+								<div href="#" class="each_work">
+									<img src="./images/main/work6.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">리뉴서울안과의원</h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li class="off">SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인&middot;서브페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="http://rseye.co.kr/" target="_blank">운영사이트 가기</a>
+												<a href="http://rseye.co.kr/" target="_blank">소스보기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="http://rseye.co.kr/" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>								
+							</div>
+							<!-- // 리뉴 -->
+							<!-- K-GEO -->
+							<div class="grid-item type1">
+								<div href="#" class="each_work">
+									<img src="./images/main/work8.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">K-GEO <span>-한국항공우주연구원</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li class="off">SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인&middot;서브페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="http://www.kgeo.go.kr/" target="_blank">운영사이트 가기</a>
+												<a href="http://www.kgeo.go.kr/" target="_blank">소스보기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="http://www.kgeo.go.kr/" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>								
+							</div>
+							<!-- // K-GEO -->
+							<!-- 세종시문화재단 -->
+							<div class="grid-item type3">
+								<div href="#" class="each_work">
+									<img src="./images/main/work7.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">세종시문화재단 홈페이지<span>-(재)세종시문화재단</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li><i class="xi-check"></i>SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>주요업무:</span> 신규페이지 퍼블리싱, <br>컨텐츠 운영관리 지원</p>
+											<div class="btn_box">
+												<a href="https://sjcf.or.kr/" target="_blank">운영사이트 가기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="##">자세히 보기</a>
+											<a href="https://sjcf.or.kr/" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>								
+							</div>
+							<!-- // 세종시문화재단 -->
+							<!-- 농정원 -->
+							<div class="grid-item type3">
+								<div href="#" class="each_work">
+									<img src="./images/main/work10.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">농림수산식품교육문화정보원 홈페이지<span>-농림수산식품교육문화정보원</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li><i class="xi-check"></i>SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>주요업무:</span> 하자보수 및 컨텐츠 운영관리 지원</p>
+											<div class="btn_box">
+												<a href="https://www.epis.or.kr/main/view" target="_blank">운영사이트 가기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://www.epis.or.kr/main/view" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>								
+							</div>
+							<!-- // 농정원 -->
+							<!-- 사이버가디언즈 -->
+							<div class="grid-item type2">
+								<div href="#" class="each_work">
+									<img src="./images/main/work11.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">사이버가디언즈<span>-한국정보기술연구원</span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li><i class="xi-check"></i>SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="https://www.cyberguardians.or.kr/main.do" target="_blank">운영사이트 가기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://www.cyberguardians.or.kr/main.do" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>								
+							</div>
+							<!-- // 사이버가디언즈 -->
+							<!-- ktledu -->
+							<div class="grid-item type1">
+								<div href="#" class="each_work">
+									<img src="./images/main/work9.jpg" />
+									<div class="brief_view_wrap">
+										<div class="brief_box">
+											<h3 class="tit">한국산업기술시험원 전문기술교육센터 홈페이지 <span>-한국산업기술시험원 </span></h3>
+											<div class="tech_wrap">
+												<ul class="tech_list clearfix">
+													<li><i class="xi-check"></i>html5</li>
+													<li><i class="xi-check"></i>css3</li>
+													<li><i class="xi-check"></i>javascript</li>
+													<li><i class="xi-check"></i>jquery</li>
+													<li><i class="xi-check"></i>SVN</li>
+													<li><i class="xi-check"></i>크로스브라우징</li>
+												</ul>
+											</div>
+											<p class="part"><span>참여율:</span> 메인&middot;서브페이지 100% 퍼블리싱</p>
+											<div class="btn_box">
+												<a href="https://edu.ktl.re.kr/" target="_blank">운영사이트 가기</a>
+												<a href="https://edu.ktl.re.kr/" target="_blank">소스보기</a>
+											</div>
+										</div>
+									</div>
+									<!-- <div class="btn_box">
+										<div class="va_m">
+											<a href="#">자세히 보기</a>
+											<a href="https://edu.ktl.re.kr/" target="_blank">운영사이트 가기</a>
+										</div>
+									</div> -->
+								</div>
+								<!-- <a href='https://kor.pngtree.com/so/도서관'>도서관 png에서 kor.pngtree.com</a> -->								
+							</div>
+							<!-- // ktledu -->						
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- // section3 -->
+
+			<!-- section4 -->
+			<section class="section section4" id="section4">
+				<div class="container">
+					<div class="about_wrap">
+						<div class="lottery_box">
+							<div class="lottery_wrap">
+								<div class="con clearfix">
+									<div class="left_box">
+										<div class="va_m">
+											<h3 class="tit">
+												<i class="xi-star"></i>
+												<i class="xi-star"></i>
+												경은 복권
+												<i class="xi-star"></i>
+												<i class="xi-star"></i>
+											</h3>
+											<div class="img_box">
+												<img src="./images/main/lottery_profile.png" alt="">
+											</div>
+											<div class="txt_box">
+												<p>100% 당첨!</p>
+											</div>
+										</div>
+									</div>
+									<div class="right_box">
+										<div class="scratch_box">
+											<ul class="scratch_list">
+												<li>
+													<p class="txt">웹에이전시에서 다양한 경험을 쌓은 2년차</p>
+													<span class="scratch_area"></span>
+													<span class="cursor">
+														<img src="./images/main/click_cursor.png" alt="커서 아이콘">
+													</span>
+												</li>
+												<li>
+													<p class="txt">웹표준<span class="noto_fonts">&middot;</span>접근성 준수 및 유지보수에 용이한 Markup 구현</p>
+													<span class="scratch_area"></span>
+												</li>
+												<li>
+													<p class="txt">기획<span class="noto_fonts">&middot;</span>디자인의 빠른 파악, 개발자와의 원활한 소통 가능</p>
+													<span class="scratch_area"></span>
+												</li>
+												<li>
+													<p class="txt">사용자 편의성 향상과 즐거운 UI<span class="noto_fonts">&middot;</span>UX제공을 위해 고민하며</p>
+													<span class="scratch_area"></span>
+												</li>
+												<li>
+													<p class="txt">생산성 향상과 효율적 협업을 위해 꾸준히 공부하는</p>
+													<span class="scratch_area"></span>
+												</li>
+												<li>
+													<p class="txt">
+														<a href="mailto:kekxox@gmail.com"><i class="xi-mail"></i>kekxox@gmail.com</a>
+														<a href="sms:010-9906-0922"><i class="xi-message"></i>010-9906-0922</a>
+													</p>
+													<span class="scratch_area"></span>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="trigger3" class="trigger3"></div>
+
+				<!-- footer -->
+					<footer data-include="footer"></footer>
+				<!-- // footer -->
+				
+			</section>
+			<!-- // section4 -->
+
+			<!-- modal_box -->
+			<div class="modal_box">
+				<div class="modal_wrap">
+					<div class="inner">
+						<p class="txt wow" data-wow-delay="0.1s"><span>'김경은'</span>이라는 복권을 <br>마저 긁어보시겠습니까?</p>
+						<div class="btn_wrap wow" data-wow-delay="0.5s">
+							<button type="button" class="yes_btn"><span>Y</span><span>e</span><span>s</span></button>
+							<button type="button" class="yes_btn"><span>Y</span><span>e</span><span>s</span></button>
+						</div>
+					</div>
+					<div class="inner inner2">
+						<p class="txt">CONTACT ME!</p>
+						<div class="contact_box">
+							<a href="mailto:kekxox@gmail.com" class="wow" data-wow-delay="0.5s"><i class="xi-mail"></i>kekxox@gmail.com</a>
+							<a href="sms:010-9906-0922" class="wow" data-wow-delay="0.7s"><i class="xi-message"></i>010-9906-0922</a>
+						</div>
+					</div>
+					<div class="close_wrap">
+						<button type="button" class="close_btn"><i class="xi-close-circle"></i></button>
+					</div>
+				</div>
+			</div>
+			<!-- // modal_box -->
+			
+
+		</main>
+		<!-- // contents -->
+
+		
+
+	</div>
+	<!-- // wrapper -->
+		
+	<script>		
+
+        $(function() {
+
+            $.get("./include/header.html", function(data, status){
+				$("[data-include='header']").html(data);
+				$.getScript("./js/common.js");
+			});
+
+			$.get("./include/footer.html", function(data, status){
+				$("[data-include='footer']").html(data);
+				$.getScript("./js/common.js");
+			});
+
+        });
+
+		new WOW().init();
+
+    </script>
+	
+</body>
+</html>
+
+
