@@ -80,28 +80,6 @@ $(function(){
 	});
 
 
-	/* section1 달 오브젝트 mouse parallax */
-//	var currentX = '';
-//	var currentY = '';
-//	var movementConstant = 0.0055;
-//	$(document).mousemove(function(e) {
-//		if (currentX == '') currentX = e.pageX;
-//		var xdiff = e.pageX - currentX;
-//		currentX = e.pageX;
-//		if (currentY == '') currentY = e.pageY;
-//		var ydiff = e.pageY - currentY;
-//		currentY = e.pageY;
-//		$('.parallax div').each(function(i, el) {
-//			var movement = (i + 1) * (xdiff * movementConstant);
-//			var movementy = (i + 1) * (ydiff * movementConstant);
-//			var newX = $(el).position().left + movement;
-//			var newY = $(el).position().top + movementy;
-//			$(el).css('left', newX + 'px');
-//			$(el).css('top', newY + 'px');
-//		});
-//	});
-
-
 
 	//section3  work_list_box marsony layout
 	var msnry = new Masonry( '.grid', {
@@ -307,41 +285,5 @@ $(function(){
 //		.addIndicators({
 //			name: "3"
 //		  });
-
-
-
-
-
-	
-
-	
-
-
-
-// 기기체크
-//	function isMobile(){
-//		var UserAgent = navigator.userAgent;
-//		if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null)
-//		{
-//			return true;
-//		}else{
-//			return false;
-//		}
-//	}
-//
-//	if(isMobile())
-//		{
-//			alert("mobile");
-//		}
-//		else{
-//			alert('pc');
-//		}	
-//	});
-
-	
-
-
-
-	
 
 });
